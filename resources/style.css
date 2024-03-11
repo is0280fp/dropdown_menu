@@ -7,12 +7,15 @@
 .Menu-Item {
     display: flex;
     flex-direction: column;
+    width: 150px;
+    text-align: center;
 }
 
 .Menu-Item-Label {
     padding: 10px;
     border: 1px solid black;
     border-right: none;
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
 }
 
 .Menu li:last-child .Menu-Item-Label {
@@ -24,6 +27,12 @@
     padding: 0;
     background-color: #0194ff;
     visibility: hidden;
+    position: relative;
+    top: -10px
+}
+
+.SubMenu li + li {
+    border: 1px solid white;
 }
 
 .SubMenu-Item {
@@ -36,5 +45,7 @@
 }
 
 .Menu-Item:hover .SubMenu {
+    transition: all 0.3s; /* 追加 */
     visibility: visible;
+    transform: translateY(10px); /*　追加 */
   }
