@@ -1,0 +1,16 @@
+.Menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.Menu-Item-Label {
+    padding: 10px;
+    border: 1px solid black;
+    border-right: none;
+}
+
+.Menu li:last-child .Menu-Item-Label {
+    border-right: 1px solid black;
+}
+
