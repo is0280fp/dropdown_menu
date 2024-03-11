@@ -4,6 +4,11 @@
     list-style-type: none;
 }
 
+.Menu-Item {
+    display: flex;
+    flex-direction: column;
+}
+
 .Menu-Item-Label {
     padding: 10px;
     border: 1px solid black;
@@ -14,3 +19,22 @@
     border-right: 1px solid black;
 }
 
+.SubMenu {
+    list-style-type: none;
+    padding: 0;
+    background-color: #0194ff;
+    visibility: hidden;
+}
+
+.SubMenu-Item {
+    padding: 10px 0 10px 0
+}
+
+.SubMenu-Item-Link {
+    color: white;
+    text-decoration:none;
+}
+
+.Menu-Item:hover .SubMenu {
+    visibility: visible;
+  }
